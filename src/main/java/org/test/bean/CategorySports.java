@@ -8,7 +8,6 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
@@ -32,7 +31,7 @@ public class CategorySports implements Serializable {
 	String sportName;
 	
 	@Column(name="CATEGORY_ID", nullable=false)
-	@ManyToOne
+	//@ManyToOne
 	Long categoryId;
 	public Long getSportId() {
 		return sportId;
